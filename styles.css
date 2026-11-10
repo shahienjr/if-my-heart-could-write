@@ -249,3 +249,20 @@ figcaption{
   .reveal{opacity:1;transform:none;transition:none}
   .envelope-flap{transition:none}
 }
+/* Mobile photo adjustments */
+@media (max-width: 520px) {
+  .photo-frame {
+    margin: 28px 0;
+    padding: 10px;
+  }
+
+  .photo-frame img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 48svh;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+}
