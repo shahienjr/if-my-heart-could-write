@@ -250,19 +250,26 @@ figcaption{
   .envelope-flap{transition:none}
 }
 /* Mobile photo adjustments */
-@media (max-width: 520px) {
+@media screen and (max-width: 520px) {
   .photo-frame {
-    margin: 28px 0;
+    margin: 24px auto;
     padding: 10px;
+    width: 100%;
   }
 
   .photo-frame img {
     display: block;
     width: 100%;
-    max-width: 100%;
     height: auto;
-    max-height: 48svh;
+    max-height: 42svh;
     object-fit: contain;
+    object-position: center;
     margin: 0 auto;
+  }
+
+  .photo-frame figcaption {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-top: 10px;
   }
 }
